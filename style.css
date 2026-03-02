@@ -147,9 +147,13 @@ body {
 
   .section__content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 3rem;
     margin-top: 2rem;
+
+    @media (min-width: 970px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
 .info-box {
