@@ -8,6 +8,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="fontello/css/fontello-embedded.css">
+  <script type="module" src="index.js"></script>
 </head>
 <body>
   <header class="primary-header">
@@ -16,13 +17,22 @@
   </header>
 
   <!-- Navigation -->
-  <nav class="primary-nav ">
-    <ul class="primary-nav__items-container">
-      <li><a class="button" href="#presentation">Festival</a></li>
-      <li><a class="button" href="#associations">Organisateurs</a></li>
-      <li><a class="button" href="https://www.facebook.com/profile.php?id=61574140577622" target="_blank" title="Facebook"><i class="icon-facebook-squared"></i></a></li>
-      <li><a class="button" href="https://www.instagram.com/bienvenue_a_toi_77/" target="_blank" title="Instagram"><i class="icon-instagram"></i></a></li>
-    </ul>
+  <nav class="primary-nav">
+    <div class="primary-nav__content">
+      <div class="primary-nav__menu">
+        <a class="primary-nav__item button" href="#presentation">Festival</a>
+        <a class="primary-nav__item button" href="#associations">Organisateurs</a>
+      </div>
+      <div class="primary-nav__links">
+        <a class="button" href="https://www.facebook.com/profile.php?id=61574140577622" target="_blank" title="Facebook"><i class="icon-facebook-squared"></i></a>
+        <a class="button" href="https://www.instagram.com/bienvenue_a_toi_77/" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>
+      </div>
+      <toggle-nav-bar-button class="primary-nav__toggle-button">
+        <s class="primary-nav__toggle-button__bar"></s>
+        <s class="primary-nav__toggle-button__bar"></s>
+        <s class="primary-nav__toggle-button__bar"></s>
+      <toggle-nav-bar-button/>
+    </div>
   </nav>
 
   <!-- Présentation -->
