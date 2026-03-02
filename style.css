@@ -94,7 +94,6 @@ body {
 }
 
   .primary-nav__content {
-    list-style: none;
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -122,13 +121,14 @@ body {
     }
   }
 
+  .primary-nav__links {
+    display: flex;
+  }
+
   .primary-nav__open .primary-nav__menu {
       left: 0;
       padding-top: 57px;
       padding-bottom: 10px;
-  }
-
-  .primary-nav__links {
   }
 
   .primary-nav__item {
