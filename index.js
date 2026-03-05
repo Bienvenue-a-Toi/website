@@ -1,3 +1,5 @@
+import './photo_viewer.js'
+
 class ToggleNavBarButton extends HTMLElement {
   connectedCallback() {
     this.addEventListener('click', this.onClick.bind(this))
