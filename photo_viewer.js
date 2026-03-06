@@ -3,8 +3,22 @@
 const AUTO_PLAY_DELAY = 5000;
 
 const photos = [
-  'assets/photos/photo_01.jpg',
-  'assets/photos/photo_02.jpg',
+  'assets/photos/01_scarface.jpg',
+  'assets/photos/02_turn_off.jpg',
+  'assets/photos/03_les_revolvers.jpg',
+  'assets/photos/04_village.jpg',
+  'assets/photos/05_scarface.jpg',
+  'assets/photos/06_turn_off.jpg',
+  'assets/photos/07_les_revolvers.jpg',
+  'assets/photos/08_scarface.jpg',
+  'assets/photos/09_turn_off.jpg',
+  'assets/photos/10_les_revolvers.jpg',
+  'assets/photos/11_scarface.jpg',
+  'assets/photos/12_turn_off.jpg',
+  'assets/photos/13_les_revolvers.jpg',
+  'assets/photos/14_scarface.jpg',
+  'assets/photos/15_turn_off.jpg',
+  'assets/photos/16_les_revolvers.jpg',
 ];
 
 // State
