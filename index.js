@@ -9,19 +9,25 @@ class ToggleNavBarButton extends HTMLElement {
 
   get navbar() {
     const navbar = this.closest('.primary-nav')
-    console.assert(navbar !== undefined)
+    console.assert(navbar)
     return navbar
   }
 
   onClick(evt) {
+    if (!this.navbar) {
+      evt.preventDefault()
+      return
+    }
     this.navbar.classList.toggle('primary-nav__open')
     evt.preventDefault()
   }
 
   close() {
+    if (!this.navbar) {
+      return
+    }
     this.navbar.classList.remove('primary-nav__open')
   }
 }
 
 window.customElements.define('toggle-nav-bar-button', ToggleNavBarButton)
-

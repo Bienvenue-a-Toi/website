@@ -31,7 +31,6 @@ const photoContainer = document.getElementById('photoContainer');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const controlBtn = document.getElementById('controlBtn');
-const photoCounter = document.getElementById('photoCounter');
 const indicatorsContainer = document.getElementById('indicators');
 
 function init() {
@@ -163,4 +162,3 @@ document.addEventListener('keydown', (e) => {
 
 // Démarrer l'application
 init();
-
