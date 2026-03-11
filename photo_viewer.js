@@ -3,22 +3,22 @@
 const AUTO_PLAY_DELAY = 5000;
 
 const photos = [
-  'assets/photos/01_scarface.jpg',
-  'assets/photos/02_turn_off.jpg',
-  'assets/photos/03_les_revolvers.jpg',
-  'assets/photos/04_village.jpg',
-  'assets/photos/05_scarface.jpg',
-  'assets/photos/06_turn_off.jpg',
-  'assets/photos/07_les_revolvers.jpg',
-  'assets/photos/08_scarface.jpg',
-  'assets/photos/09_turn_off.jpg',
-  'assets/photos/10_les_revolvers.jpg',
-  'assets/photos/11_scarface.jpg',
-  'assets/photos/12_turn_off.jpg',
-  'assets/photos/13_les_revolvers.jpg',
-  'assets/photos/14_scarface.jpg',
-  'assets/photos/15_turn_off.jpg',
-  'assets/photos/16_les_revolvers.jpg',
+  { url: 'assets/photos/01_scarface.jpg', alt: 'Scarface devant le public du festival.' },
+  { url: 'assets/photos/02_turn_off.jpg', alt: 'Turn Off sur la scène du festival.' },
+  { url: 'assets/photos/03_les_revolvers.jpg', alt: 'Les Revolvers sur la scène du festival.' },
+  { url: 'assets/photos/04_village.jpg', alt: 'Le village des exposants sur le site du festival.' },
+  { url: 'assets/photos/05_scarface.jpg', alt: 'Scarface sur la scène du festival.' },
+  { url: 'assets/photos/06_turn_off.jpg', alt: 'Turn Off sur la scène du festival.' },
+  { url: 'assets/photos/07_les_revolvers.jpg', alt: 'Les Revolvers sur la scène du festival.' },
+  { url: 'assets/photos/08_scarface.jpg', alt: 'Scarface sur la scène du festival.' },
+  { url: 'assets/photos/09_turn_off.jpg', alt: 'Turn Off sur la scène du festival.' },
+  { url: 'assets/photos/10_les_revolvers.jpg', alt: 'Les Revolvers sur la scène du festival.' },
+  { url: 'assets/photos/11_scarface.jpg', alt: 'Scarface sur la scène du festival.' },
+  { url: 'assets/photos/12_turn_off.jpg', alt: 'Turn Off sur la scène du festival.' },
+  { url: 'assets/photos/13_les_revolvers.jpg', alt: 'Les Revolvers sur la scène du festival.' },
+  { url: 'assets/photos/14_scarface.jpg', alt: 'Scarface sur la scène du festival.' },
+  { url: 'assets/photos/15_turn_off.jpg', alt: 'Turn Off sur la scène du festival.' },
+  { url: 'assets/photos/16_les_revolvers.jpg', alt: 'Les Revolvers sur la scène du festival.' },
 ];
 
 // State
@@ -36,10 +36,10 @@ const indicatorsContainer = document.getElementById('indicators');
 
 function init() {
   // Créer les images
-  photos.forEach((photoUrl, index) => {
+  photos.forEach((photo, index) => {
     const img = document.createElement('img');
-    img.src = photoUrl;
-    img.alt = `Photo ${index + 1}`;
+    img.src = photo.url;
+    img.alt = photo.alt;
     img.classList.add('photo-viewer__photo');
     if (index === 0) {
       img.classList.add('photo-viewer__photo--active');
