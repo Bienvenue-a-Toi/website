@@ -251,19 +251,19 @@ body {
   }
 
   .primary-nav__open .primary-nav__toggle-button {
-      .primary-nav__toggle-button__bar {
-          &:nth-child(1) {
-            transform: translateY(8px) rotate(-45deg);
-          }
-
-          &:nth-child(2) {
-            opacity: 0;
-          }
-
-          &:nth-child(3) {
-            transform: translateY(-8px) rotate(45deg);
-          }
+    .primary-nav__toggle-button__bar {
+      &:nth-child(1) {
+        transform: translateY(8px) rotate(-45deg);
       }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: translateY(-8px) rotate(45deg);
+      }
+    }
   }
 
   .primary-nav__toggle-button__bar { 
@@ -355,6 +355,119 @@ body {
     font-family: 'Arial', sans-serif;
     font-weight: bold;
     font-size: var(--fz-4);
+  }
+
+.programme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.programme-card {
+  background: var(--color-on-dark);
+  padding: 2rem;
+  border: 6px solid var(--color-primary);
+  box-shadow: 10px 10px 0 var(--color-primary-shadow);
+  transition: transform 0.2s;
+  transform: rotate(-1deg);
+}
+
+.programme-card:nth-child(2) {
+  transform: rotate(1deg);
+}
+
+.programme-card:nth-child(3) {
+  transform: rotate(-0.5deg);
+}
+
+.programme-card__title {
+  color: var(--color-on-primary);
+  background: var(--color-primary);
+  font-size: var(--fz-2);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 3px solid var(--color-dark);
+  box-shadow: 4px 4px 0 var(--color-dark-shadow);
+}
+
+.programme-card__artist {
+ 	display: block;
+  background: var(--color-dark);
+  color: var(--color-on-dark);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 8px solid var(--color-dark);
+  transform: rotate(0.5deg);
+  scroll-margin-top: 150px;
+}
+
+  .programme-card__artist:hover {
+    border-left: 8px solid var(--color-primary);
+    cursor: pointer;
+  }
+
+.programme-card__artist:last-child {
+  margin-bottom: 0;
+}
+
+.programme-card__artist__name {
+  font-weight: 900;
+  color: var(--color-on-dark);
+  font-size: var(--fz-3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.programme-card__artist__info {
+  color: var(--color-primary);
+  font-size: var(--fz-4);
+  margin-top: 0.3rem;
+  font-weight: bold;
+}
+
+.programme-card__artist__details {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1rem;
+  letter-spacing: 0px;
+
+  max-height: 0px;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.4s ease;
+
+  @media (max-width: 970px) {
+    display: block;
+  }
+}
+  .programme-card__artist__details--open {
+    max-height: 1000px;
+  }
+
+.programme-card__artist__photo {
+  max-width: 550px;
+  /* max-height: 15em; */
+  object-fit: contain;
+  margin-right: 1rem;
+  @media (max-width: 970px) {
+    display: block;
+    width: 100%;
+    margin-right: 0rem;
+  }
+}
+
+.programme-card__artist__description {
+  font-style: italic;
+}
+  .programme-card__artist__description p {
+    text-align: justify;
+  }
+  .programme-card__artist__description--link {
+    display: inline-block;
+    margin-top: 0.3em;
   }
 
 .partners__intro {
