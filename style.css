@@ -460,14 +460,16 @@ body {
 }
 
 .programme-card__artist__description {
-  font-style: italic;
 }
-  .programme-card__artist__description p {
-    text-align: justify;
-  }
   .programme-card__artist__description--link {
     display: inline-block;
     margin-top: 0.3em;
+  }
+  .programme-card__artist__description--content {
+    font-style: italic;
+    overflow-y: scroll;
+    max-height: 50vh;
+    text-align: justify;
   }
 
 .partners__intro {
