@@ -50,6 +50,16 @@ class ArtistCard extends HTMLElement {
       evt.preventDefault()
       return
     }
+
+    let node = evt.target
+    while (node != this) {
+      if (node.localName == "a") {
+        return
+      }
+
+      node = node.parentNode
+    }
+
     this.details.classList.toggle('programme-card__artist__details--open')
 
     if (this.details.classList.contains('programme-card__artist__details--open')) {
