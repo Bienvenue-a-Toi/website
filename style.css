@@ -98,12 +98,31 @@ body {
 .primary-header {
   background: var(--color-on-dark);
   color: var(--color-dark);
-  text-align: center;
-  padding: 4rem 2rem;
   position: relative;
   overflow: hidden;
   border-bottom: 8px solid var(--color-primary);
 }
+
+  .primary-header__background-video {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+
+    @media (max-width: 1680px) {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  .primary-header__content {
+    background: #00000030;
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
 
   .primary-header__logo {
     max-height: 40vh;
