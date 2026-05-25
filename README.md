@@ -16,3 +16,6 @@ Then it's possible to start a local server using the command:
 browser-sync start --server --watch
 ```
 
+## Convert images
+
+convert photo_02.jpg -resize 1200x1200 photo_01.jpg
