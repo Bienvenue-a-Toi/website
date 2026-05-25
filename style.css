@@ -347,6 +347,12 @@ body {
     }
   }
 
+  .presentation-video {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    margin-top: 20px;
+  }
+
 .info-box {
   background: var(--color-dark);
   color: var(--color-on-dark);
